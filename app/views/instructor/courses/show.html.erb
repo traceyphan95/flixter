@@ -9,8 +9,7 @@
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
   </div>
 
-## Image tag below is added per lesson 22 and not sure if needs editing
-<%= image_tag current_course, class: 'img-fluid' %>
+<%= image_tag current_course.image.url, class: 'img-fluid' %>
 
   <ul>
     <% current_course.sections.each do |section| %>
